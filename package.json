@@ -15,10 +15,12 @@
   ],
   "scripts": {
     "start": "tsc --watch",
-    "prepare": "tsc",
+    "prepare": "yarn build",
+    "build": "tsc",
     "coverage": "jest --coverage",
-    "lint": "tsc && prettier -list-different --write src tests",
-    "test": "jest"
+    "lint": "tsc --noEmit && prettier -list-different --write src tests",
+    "test": "jest",
+    "postinstall": "yarn build"
   },
   "repository": {
     "type": "git",
