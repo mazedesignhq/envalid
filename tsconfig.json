@@ -13,8 +13,7 @@
     "noUnusedLocals": true,
     "noUnusedParameters": true,
     "noImplicitReturns": true,
-    "lib": ["es2019", "DOM"],
-    "typeRoots": ["./node_modules/@types"]
+    "lib": ["es2019", "DOM"]
   },
   "include": ["src"],
   "exclude": [
